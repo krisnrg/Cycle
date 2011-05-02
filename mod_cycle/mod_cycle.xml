@@ -1,0 +1,38 @@
+ <?xml version="1.0" encoding="utf-8"?> 
+<install type="module" version="1.5"> 
+  <name>Cycle Banner</name> 
+  <author>NRG Media Solutions</author> 
+  <creationDate>September 09</creationDate> 
+  <copyright>(C) 2009</copyright> 
+  <license>Internal Use Only</license> 
+  <authorEmail>krisnrg@gmail.com</authorEmail> 
+  <authorUrl>www.newlifeaz.net</authorUrl> 
+  <version>1.3</version> 
+  <description>A module for cycleling pictures. It degrades gracefully without Javascript. It uses the cycle jQuery plugin</description>
+ <files> 
+    <filename module="mod_cycle">mod_cycle.php</filename> 
+    <filename>css/rotator.css</filename>
+    <filename>helper.php</filename>
+	<filename>img/back.png</filename>
+	<filename>img/next.png</filename>
+	<filename>img/bullets.png</filename>
+	<filename>img/loading.gif</filename>
+	<filename>js/jquery.js</filename>
+	<filename>js/cycle.js</filename>
+    <filename>js/script.js</filename> 
+    <filename>tmpl/default.php</filename>
+</files> 
+  <params> 
+   	<param name="XMLpath" type="text" default="" label="XML" description="Type the path of the XML file"/> 
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	<param name="selector" type="text" default="" label="jquery selector" description="Use this to have multiple modules on the same page" />
+	<param name="width" type="text" default="" label="Width (px)" description="width of slideshow" />
+	<param name="height" type="text" default="" label="Height (px)" description="height of slideshow" />
+	<param name="cat" type="text" default="" label="cat" description="height of slideshow" />
+	<param name="padding" type="text" default="" label="Padding (px)" description="The margin for the css transparancy hover" />
+	<param name="jquery" type="radio" default="1" label="Include jQuery" description="">
+	  <option value="0">no</option>
+	  <option value="1">yes</option>
+	</param>
+  </params> 
+</install>
